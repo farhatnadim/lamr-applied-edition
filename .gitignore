@@ -1,281 +1,92 @@
-## Core latex/pdflatex auxiliary files:
-*.aux
-*.lof
-*.log
-*.lot
-*.fls
-*.out
-*.toc
-*.fmt
-*.fot
-*.cb
-*.cb2
-.*.lb
+===================================================================
 
-## Build directories
+General
+
+===================================================================
+
+IDE and editor specific files
+
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+===================================================================
+
+Python
+
+===================================================================
+
+Byte-compiled / optimized / DLL files
+
+pycache/
+*.pyc
+*.pyo
+*.pyd
+
+C extensions
+
+*.so
+
+Distribution / packaging
+
 build/
-_build/
-.lake/
+dist/
+downloads/
+eggs/
+*.egg-info/
+sdist/
+wheels/
+*.egg
 
-## Intermediate documents:
-*.dvi
-*.xdv
-*-converted-to.*
-# these rules might exclude image files for figures etc.
-# *.ps
-# *.eps
-# *.pdf
+Virtual environments
 
-## Generated if empty string is given at "Please type another file name for output:"
-*.pdf
+venv/
+.venv/
+env/
+.env
+.env.*
+!.env.example
 
-## Bibliography auxiliary files (bibtex/biblatex/biber):
-*.bbl
-*.bcf
-*.blg
-*-blx.aux
-*-blx.bib
-*.run.xml
+Caches and temporary files
 
-## Build tool auxiliary files:
-*.fdb_latexmk
-*.synctex
-*.synctex(busy)
-*.synctex.gz
-*.synctex.gz(busy)
-*.pdfsync
+.cache/
+.pytest_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+pip-log.txt
 
-## Build tool directories for auxiliary files
-# latexrun
-latex.out/
+===================================================================
 
-## Auxiliary and intermediate files from other packages:
-# algorithms
-*.alg
-*.loa
+Rust (Cargo)
 
-# achemso
-acs-*.bib
+===================================================================
 
-# amsthm
-*.thm
+The main build directory
 
-# beamer
-*.nav
-*.pre
-*.snm
-*.vrb
+/target/
 
-# changes
-*.soc
+Generated files (sometimes outside target)
 
-# comment
-*.cut
+Cargo.lock.orig
 
-# cprotect
-*.cpt
+NOTE: Cargo.lock is intentionally NOT ignored, as it's standard
 
-# elsarticle (documentclass of Elsevier journals)
-*.spl
+practice to commit it to version control to ensure reproducible builds.
 
-# endnotes
-*.ent
+===================================================================
 
-# fixme
-*.lox
+Lean 4 (Lake)
 
-# feynmf/feynmp
-*.mf
-*.mp
-*.t[1-9]
-*.t[1-9][0-9]
-*.tfm
+===================================================================
 
-#(r)(e)ledmac/(r)(e)ledpar
-*.end
-*.?end
-*.[1-9]
-*.[1-9][0-9]
-*.[1-9][0-9][0-9]
-*.[1-9]R
-*.[1-9][0-9]R
-*.[1-9][0-9][0-9]R
-*.eledsec[1-9]
-*.eledsec[1-9]R
-*.eledsec[1-9][0-9]
-*.eledsec[1-9][0-9]R
-*.eledsec[1-9][0-9][0-9]
-*.eledsec[1-9][0-9][0-9]R
+The main Lake build directory
 
-# glossaries
-*.acn
-*.acr
-*.glg
-*.glo
-*.gls
-*.glsdefs
-*.lzo
-*.lzs
+/build/
 
-# uncomment this for glossaries-extra (will ignore makeindex's style files!)
-# *.ist
+Lake's package management directory
 
-# gnuplottex
-*-gnuplottex-*
-
-# gregoriotex
-*.gaux
-*.gtex
-
-# htlatex
-*.4ct
-*.4tc
-*.idv
-*.lg
-*.trc
-*.xref
-
-# hyperref
-*.brf
-
-# knitr
-*-concordance.tex
-# TODO Comment the next line if you want to keep your tikz graphics files
-*.tikz
-*-tikzDictionary
-
-# listings
-*.lol
-
-# luatexja-ruby
-*.ltjruby
-
-# makeidx
-*.idx
-*.ilg
-*.ind
-
-# minitoc
-*.maf
-*.mlf
-*.mlt
-*.mtc[0-9]*
-*.slf[0-9]*
-*.slt[0-9]*
-*.stc[0-9]*
-
-# minted
-_minted*
-*.pyg
-
-# morewrites
-*.mw
-
-# nomencl
-*.nlg
-*.nlo
-*.nls
-
-# pax
-*.pax
-
-# pdfpcnotes
-*.pdfpc
-
-# sagetex
-*.sagetex.sage
-*.sagetex.py
-*.sagetex.scmd
-
-# scrwfile
-*.wrt
-
-# sympy
-*.sout
-*.sympy
-sympy-plots-for-*.tex/
-
-# pdfcomment
-*.upa
-*.upb
-
-# pythontex
-*.pytxcode
-pythontex-files-*/
-
-# tcolorbox
-*.listing
-
-# thmtools
-*.loe
-
-# TikZ & PGF
-*.dpth
-*.md5
-*.auxlock
-
-# todonotes
-*.tdo
-
-# vhistory
-*.hst
-*.ver
-
-# easy-todo
-*.lod
-
-# xcolor
-*.xcp
-
-# xmpincl
-*.xmpi
-
-# xindy
-*.xdy
-
-# xypic precompiled matrices and outlines
-*.xyc
-*.xyd
-
-# endfloat
-*.ttt
-*.fff
-
-# Latexian
-TSWLatexianTemp*
-
-## Editors:
-# WinEdt
-*.bak
-*.sav
-
-# Texpad
-.texpadtmp
-
-# LyX
-*.lyx~
-
-# Kile
-*.backup
-
-# gummi
-.*.swp
-
-# KBibTeX
-*~[0-9]*
-
-# TeXnicCenter
-*.tps
-
-# auto folder when using emacs and auctex
-./auto/*
-*.el
-
-# expex forward references with \gathertags
-*-tags.tex
-
-# standalone packages
-*.sta
-
-# Makeindex log files
-*.lpz
+/.lake/
