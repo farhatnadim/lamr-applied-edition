@@ -1,4 +1,4 @@
-import Mathlib.Data.Real.Basic
+import Mathlib
 import LAMR
 
 -- textbook: induction on Nat

@@ -1,4 +1,4 @@
-import Mathlib.Data.Real.Basic
+import Mathlib
 
 section
 variable (a b c d : Int)

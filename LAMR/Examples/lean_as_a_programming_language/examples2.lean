@@ -111,3 +111,9 @@ def fib n := (fibAux n).1
 
 #eval (List.range 20).map fib
 -- end: efficient Fibonacci
+def reduce_recursive : Nat → Nat
+ | 0 => 0
+ | Nat.succ n  =>  reduce_recursive n + (n+1)
+
+def input : Nat := 10
+#eval reduce_recursive 10
