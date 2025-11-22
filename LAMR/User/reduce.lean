@@ -24,9 +24,7 @@ example (n:Nat) : 2*sum_up_to_recursive n = n * .succ n := by
   | zero =>
       rw[sum_up_to_recursive]
   | succ n ih =>
-      rw[sum_up_to_recursive]
-      rw [mul_add ]
-      rw [ ih]
+      rw[sum_up_to_recursive, mul_add, ih, Nat.succ_eq_add_one, Nat.succ_eq_add_one]
       ring
 
 

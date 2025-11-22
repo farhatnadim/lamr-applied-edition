@@ -4,14 +4,15 @@ import LAMR
 -- textbook: induction on Nat
 def sum_up_to : Nat → Nat
   | 0 => 0
-  | (n + 1) => (n + 1) + sum_up_to n
+  | (n+1) => (n+1) + sum_up_to n
 
 example (n : Nat) : 2 * sum_up_to n = n * (n + 1) := by
   induction n with
   | zero =>
       rw [sum_up_to]
   | succ n ih =>
-      rw [sum_up_to, mul_add, ih]
+      rw [sum_up_to]
+      rw [mul_add, ih]
       ring
 -- end textbook
 
