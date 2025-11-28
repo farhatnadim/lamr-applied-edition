@@ -1,6 +1,4 @@
-import Mathlib.Data.Real.Basic
-
-section
+import Mathlib
 variable (a b c d : Int)
 variable (f : Int → Int)
 
@@ -80,7 +78,8 @@ def fib : Nat → Nat
   | (n + 2) => fib (n + 1) + fib n
 
 example : fib (n + 3) = 2 * fib (n + 1) + fib n := by
-  rw [fib, fib]
+  rw [fib]
+  rw [fib]
   ring
 -- end textbook
 
